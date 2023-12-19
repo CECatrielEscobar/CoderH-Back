@@ -100,7 +100,7 @@ class ProductManager {
 }
 
 
-// para probar las funcionalidades de la calse
+// para probar las funcionalidades de la clase
 
 const producto = new ProductManager('./')
 
