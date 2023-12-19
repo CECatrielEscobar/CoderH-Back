@@ -44,7 +44,7 @@ class ProductManager {
         await fs.promises.writeFile(`${this.path}Productos.json`,JSON.stringify(this.products))
         return console.log('Producto registrado correctamente')
         } catch (error) {
-            console.log('error',error)
+            console.log('No se pudo registrar el producto',error)
         }
     }
 
@@ -61,7 +61,7 @@ class ProductManager {
             await fs.promises.writeFile(`${this.path}Productos.json`,JSON.stringify(datosParseados))
             return producto
         } catch (error) {
-            console.log('hubo un error en updateProduct',error)
+            console.log('No hay datos guardados',error)
         }
     }
 
